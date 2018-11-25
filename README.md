@@ -4,7 +4,7 @@ Simple Marks Calculator:
 ![Alt text](https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks%20Screenshot.png?raw=true "QMarks Screenshot")
 
 
-This is a simple marks calculator as requested.
+This is a simple marks calculator as requested by a valued Mac forum member.
 
 Simply download https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks.zip, unzip and execute the file.
 
