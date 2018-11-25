@@ -6,7 +6,7 @@ Simple Marks Calculator:
 
 This is a simple marks calculator as requested by a valued Mac forum member.
 
-Installation: just download 
+Installation: just download the provided .dmg file (https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks.dmg), open it and put the executable file into your applications folder. 
 
 Notice you may acknowledge your Mac's security warning in order be be able to execute.
 
