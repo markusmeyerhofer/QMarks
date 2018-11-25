@@ -42,9 +42,19 @@ void QMarks::compute()
             ui->operandsLineEdit->setText(operandsText);
         }
 
+        if (!operands->isEmpty())
+        {
+            double avg = sum/operands->size();
+            ui->averageLineEdit->setText("⨏ " + QString::number(avg));
+        }
+        else
+        {
+            ui->averageLineEdit->setText("⨏ " + QString::number(0));
+        }
+
         i++;
     }
-    ui->sumLineEdit->setText(QString::number(sum));
+    ui->sumLineEdit->setText("∑ " + QString::number(sum));
 }
 
 void QMarks::on_clearButton_clicked()
@@ -52,6 +62,7 @@ void QMarks::on_clearButton_clicked()
     operands = new QList<double>();
     this->compute();
     ui->operandsLineEdit->setText(QString::number(0));
+    ui->averageLineEdit->setText("⨏ " + QString::number(0));
 }
 
 void QMarks::on_undoButton_clicked()
@@ -64,6 +75,7 @@ void QMarks::on_undoButton_clicked()
     if (operands->isEmpty())
     {
         ui->operandsLineEdit->setText(QString::number(0));
+        ui->averageLineEdit->setText("⨏ " + QString::number(0));
     }
 
     this->compute();

@@ -27,9 +27,11 @@ class Ui_QMarks
 {
 public:
     QWidget *centralWidget;
-    QWidget *layoutWidget;
+    QWidget *widget;
     QVBoxLayout *verticalLayout;
     QLineEdit *operandsLineEdit;
+    QHBoxLayout *horizontalLayout_7;
+    QLineEdit *averageLineEdit;
     QLineEdit *sumLineEdit;
     QHBoxLayout *horizontalLayout;
     QPushButton *b025;
@@ -70,15 +72,15 @@ public:
         QMarks->resize(378, 494);
         centralWidget = new QWidget(QMarks);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        layoutWidget = new QWidget(centralWidget);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 10, 351, 411));
-        verticalLayout = new QVBoxLayout(layoutWidget);
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(10, 11, 361, 411));
+        verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        operandsLineEdit = new QLineEdit(layoutWidget);
+        operandsLineEdit = new QLineEdit(widget);
         operandsLineEdit->setObjectName(QStringLiteral("operandsLineEdit"));
         QFont font;
         font.setPointSize(13);
@@ -87,37 +89,50 @@ public:
 
         verticalLayout->addWidget(operandsLineEdit);
 
-        sumLineEdit = new QLineEdit(layoutWidget);
-        sumLineEdit->setObjectName(QStringLiteral("sumLineEdit"));
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        averageLineEdit = new QLineEdit(widget);
+        averageLineEdit->setObjectName(QStringLiteral("averageLineEdit"));
         QFont font1;
         font1.setPointSize(18);
+        averageLineEdit->setFont(font1);
+        averageLineEdit->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_7->addWidget(averageLineEdit);
+
+        sumLineEdit = new QLineEdit(widget);
+        sumLineEdit->setObjectName(QStringLiteral("sumLineEdit"));
         sumLineEdit->setFont(font1);
         sumLineEdit->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        verticalLayout->addWidget(sumLineEdit);
+        horizontalLayout_7->addWidget(sumLineEdit);
+
+
+        verticalLayout->addLayout(horizontalLayout_7);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        b025 = new QPushButton(layoutWidget);
+        b025 = new QPushButton(widget);
         b025->setObjectName(QStringLiteral("b025"));
         b025->setFont(font1);
 
         horizontalLayout->addWidget(b025);
 
-        b05 = new QPushButton(layoutWidget);
+        b05 = new QPushButton(widget);
         b05->setObjectName(QStringLiteral("b05"));
         b05->setFont(font1);
 
         horizontalLayout->addWidget(b05);
 
-        b075 = new QPushButton(layoutWidget);
+        b075 = new QPushButton(widget);
         b075->setObjectName(QStringLiteral("b075"));
         b075->setFont(font1);
 
         horizontalLayout->addWidget(b075);
 
-        b1 = new QPushButton(layoutWidget);
+        b1 = new QPushButton(widget);
         b1->setObjectName(QStringLiteral("b1"));
         b1->setFont(font1);
 
@@ -129,25 +144,25 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        b125 = new QPushButton(layoutWidget);
+        b125 = new QPushButton(widget);
         b125->setObjectName(QStringLiteral("b125"));
         b125->setFont(font1);
 
         horizontalLayout_2->addWidget(b125);
 
-        b15 = new QPushButton(layoutWidget);
+        b15 = new QPushButton(widget);
         b15->setObjectName(QStringLiteral("b15"));
         b15->setFont(font1);
 
         horizontalLayout_2->addWidget(b15);
 
-        b175 = new QPushButton(layoutWidget);
+        b175 = new QPushButton(widget);
         b175->setObjectName(QStringLiteral("b175"));
         b175->setFont(font1);
 
         horizontalLayout_2->addWidget(b175);
 
-        b2 = new QPushButton(layoutWidget);
+        b2 = new QPushButton(widget);
         b2->setObjectName(QStringLiteral("b2"));
         b2->setFont(font1);
 
@@ -159,25 +174,25 @@ public:
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setSpacing(6);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        b225 = new QPushButton(layoutWidget);
+        b225 = new QPushButton(widget);
         b225->setObjectName(QStringLiteral("b225"));
         b225->setFont(font1);
 
         horizontalLayout_3->addWidget(b225);
 
-        b25 = new QPushButton(layoutWidget);
+        b25 = new QPushButton(widget);
         b25->setObjectName(QStringLiteral("b25"));
         b25->setFont(font1);
 
         horizontalLayout_3->addWidget(b25);
 
-        b275 = new QPushButton(layoutWidget);
+        b275 = new QPushButton(widget);
         b275->setObjectName(QStringLiteral("b275"));
         b275->setFont(font1);
 
         horizontalLayout_3->addWidget(b275);
 
-        b3 = new QPushButton(layoutWidget);
+        b3 = new QPushButton(widget);
         b3->setObjectName(QStringLiteral("b3"));
         b3->setFont(font1);
 
@@ -189,25 +204,25 @@ public:
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        b325 = new QPushButton(layoutWidget);
+        b325 = new QPushButton(widget);
         b325->setObjectName(QStringLiteral("b325"));
         b325->setFont(font1);
 
         horizontalLayout_4->addWidget(b325);
 
-        b35 = new QPushButton(layoutWidget);
+        b35 = new QPushButton(widget);
         b35->setObjectName(QStringLiteral("b35"));
         b35->setFont(font1);
 
         horizontalLayout_4->addWidget(b35);
 
-        b375 = new QPushButton(layoutWidget);
+        b375 = new QPushButton(widget);
         b375->setObjectName(QStringLiteral("b375"));
         b375->setFont(font1);
 
         horizontalLayout_4->addWidget(b375);
 
-        b4 = new QPushButton(layoutWidget);
+        b4 = new QPushButton(widget);
         b4->setObjectName(QStringLiteral("b4"));
         b4->setFont(font1);
 
@@ -219,25 +234,25 @@ public:
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setSpacing(6);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
-        b425 = new QPushButton(layoutWidget);
+        b425 = new QPushButton(widget);
         b425->setObjectName(QStringLiteral("b425"));
         b425->setFont(font1);
 
         horizontalLayout_5->addWidget(b425);
 
-        b45 = new QPushButton(layoutWidget);
+        b45 = new QPushButton(widget);
         b45->setObjectName(QStringLiteral("b45"));
         b45->setFont(font1);
 
         horizontalLayout_5->addWidget(b45);
 
-        b475 = new QPushButton(layoutWidget);
+        b475 = new QPushButton(widget);
         b475->setObjectName(QStringLiteral("b475"));
         b475->setFont(font1);
 
         horizontalLayout_5->addWidget(b475);
 
-        b5 = new QPushButton(layoutWidget);
+        b5 = new QPushButton(widget);
         b5->setObjectName(QStringLiteral("b5"));
         b5->setFont(font1);
 
@@ -249,7 +264,7 @@ public:
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setSpacing(6);
         horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        clearButton = new QPushButton(layoutWidget);
+        clearButton = new QPushButton(widget);
         clearButton->setObjectName(QStringLiteral("clearButton"));
         QFont font2;
         font2.setPointSize(15);
@@ -259,7 +274,7 @@ public:
 
         horizontalLayout_6->addWidget(clearButton);
 
-        undoButton = new QPushButton(layoutWidget);
+        undoButton = new QPushButton(widget);
         undoButton->setObjectName(QStringLiteral("undoButton"));
         undoButton->setFont(font2);
 
@@ -289,7 +304,8 @@ public:
     {
         QMarks->setWindowTitle(QApplication::translate("QMarks", "QMarks", nullptr));
         operandsLineEdit->setText(QApplication::translate("QMarks", "0", nullptr));
-        sumLineEdit->setText(QApplication::translate("QMarks", "0", nullptr));
+        averageLineEdit->setText(QApplication::translate("QMarks", "\342\250\217 0", nullptr));
+        sumLineEdit->setText(QApplication::translate("QMarks", "\342\210\221 0", nullptr));
         b025->setText(QApplication::translate("QMarks", "0.25", nullptr));
         b05->setText(QApplication::translate("QMarks", "0.5", nullptr));
         b075->setText(QApplication::translate("QMarks", "0.75", nullptr));
