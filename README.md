@@ -6,7 +6,9 @@ Simple Marks Calculator:
 
 This is a simple marks calculator as requested by a valued Mac forum member.
 
-Installation: just download the provided .dmg file (https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks.dmg), open it and put the executable file into your applications folder. 
+Installation (Mac): just download the provided .dmg file (https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks.dmg), open it and put the executable file into your applications folder. 
+
+The project should compile just fine under Windows as well as Linux. Clone the repo, open the provided .pro file in Qt Creator, configure, build and you should be ready to go.
 
 Notice you might need to acknowledge your Mac's security warning in order be be able to execute the app.
 
