@@ -1,7 +1,7 @@
 # QMarks
 Simple Marks Calculator:
 
-![Alt text](https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks%20Screenshot.png?raw=true "QMarks Screenshot")
+![Alt text](https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks.png?raw=true "QMarks Screenshot")
 
 
 This is a simple marks calculator as requested by a valued Mac forum member.
