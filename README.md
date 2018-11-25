@@ -1,5 +1,8 @@
 # QMarks
-Simple Marks Calculator
+Simple Marks Calculator:
+
+![Alt text](/blob/master/QMarks%20Screenshot.png?raw=true "QMarks Screenshot")
+
 https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks%20Screenshot.png
 
 This is a simple marks calculator as requested.
