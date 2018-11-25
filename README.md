@@ -6,9 +6,7 @@ Simple Marks Calculator:
 
 This is a simple marks calculator as requested by a valued Mac forum member.
 
-There is no need to download the whole project. 
-
-Simply download https://github.com/markusmeyerhofer/QMarks/blob/master/QMarks.zip, unzip and execute the file.
+For now, clone the project and simply compile using Qt Creator.
 
 Notice you may acknowledge your Mac's security warning in order be be able to execute.
 
