@@ -6,7 +6,7 @@ Simple Marks Calculator:
 
 This is a simple marks calculator as requested by a valued Mac forum member.
 
-For now, clone the project and simply compile using Qt Creator.
+Installation: just download 
 
 Notice you may acknowledge your Mac's security warning in order be be able to execute.
 
