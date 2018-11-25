@@ -12,6 +12,14 @@ Notice you may acknowledge your Mac's security warning in order be be able to ex
 
 This project is licensed under the terms of the GNU Public License v2. Feel free to clone and contribute. 
 
-Thanks, 
+How to use:
+
+Push respective buttons to add up marks. 
+
+Click "C" to clear.
+
+Click "Undo" to undo the latest step. Notice you can undo multiple steps ('til no more operands present).
+
+Enjoy, 
 
 M.
