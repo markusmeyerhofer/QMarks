@@ -1,0 +1,1 @@
+macdeployqt QMarks.app -executable=QMarks.app/Contents/MacOS/QMarks -dmg

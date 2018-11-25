@@ -208,6 +208,7 @@ DIST          = ../../Qt/5.11.2/clang_64/mkspecs/features/spec_pre.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/qt_config.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../Qt/5.11.2/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/mac/sdk.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/toolchain.prf \
@@ -410,6 +411,7 @@ Makefile: QMarks.pro ../../Qt/5.11.2/clang_64/mkspecs/macx-clang/qmake.conf ../.
 		../../Qt/5.11.2/clang_64/mkspecs/features/qt_config.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../Qt/5.11.2/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/mac/sdk.prf \
 		../../Qt/5.11.2/clang_64/mkspecs/features/toolchain.prf \
@@ -595,6 +597,7 @@ Makefile: QMarks.pro ../../Qt/5.11.2/clang_64/mkspecs/macx-clang/qmake.conf ../.
 ../../Qt/5.11.2/clang_64/mkspecs/features/qt_config.prf:
 ../../Qt/5.11.2/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../Qt/5.11.2/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../Qt/5.11.2/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../Qt/5.11.2/clang_64/mkspecs/features/mac/sdk.prf:
 ../../Qt/5.11.2/clang_64/mkspecs/features/toolchain.prf:
@@ -642,7 +645,7 @@ QMarks.app/Contents/Resources/empty.lproj:
 QMarks.app/Contents/Info.plist: 
 	@test -d QMarks.app/Contents || mkdir -p QMarks.app/Contents
 	@$(DEL_FILE) QMarks.app/Contents/Info.plist
-	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,\$${QMAKE_SHORT_VERSION},1.0,g" -e "s,@FULL_VERSION@,1.0.0,g" -e "s,\$${QMAKE_FULL_VERSION},1.0.0,g" -e "s,@TYPEINFO@,????,g" -e "s,\$${QMAKE_PKGINFO_TYPEINFO},????,g" -e "s,@BUNDLEIDENTIFIER@,com.yourcompany.QMarks,g" -e "s,\$${PRODUCT_BUNDLE_IDENTIFIER},com.yourcompany.QMarks,g" -e "s,\$${MACOSX_DEPLOYMENT_TARGET},10.11,g" -e "s,\$${IPHONEOS_DEPLOYMENT_TARGET},,g" -e "s,\$${TVOS_DEPLOYMENT_TARGET},,g" -e "s,\$${WATCHOS_DEPLOYMENT_TARGET},,g" -e "s,@ICON@,QMarks.icns,g" -e "s,\$${ASSETCATALOG_COMPILER_APPICON_NAME},QMarks.icns,g" -e "s,@EXECUTABLE@,QMarks,g" -e "s,@LIBRARY@,QMarks,g" -e "s,\$${EXECUTABLE_NAME},QMarks,g" -e "s,@TYPEINFO@,????,g" -e "s,\$${QMAKE_PKGINFO_TYPEINFO},????,g" ../../Qt/5.11.2/clang_64/mkspecs/macx-clang/Info.plist.app >QMarks.app/Contents/Info.plist
+	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,\$${QMAKE_SHORT_VERSION},1.0,g" -e "s,@FULL_VERSION@,1.0.0,g" -e "s,\$${QMAKE_FULL_VERSION},1.0.0,g" -e "s,@TYPEINFO@,????,g" -e "s,\$${QMAKE_PKGINFO_TYPEINFO},????,g" -e "s,@BUNDLEIDENTIFIER@,org.meyerhofer.QMarks,g" -e "s,\$${PRODUCT_BUNDLE_IDENTIFIER},org.meyerhofer.QMarks,g" -e "s,\$${MACOSX_DEPLOYMENT_TARGET},10.11,g" -e "s,\$${IPHONEOS_DEPLOYMENT_TARGET},,g" -e "s,\$${TVOS_DEPLOYMENT_TARGET},,g" -e "s,\$${WATCHOS_DEPLOYMENT_TARGET},,g" -e "s,@ICON@,QMarks.icns,g" -e "s,\$${ASSETCATALOG_COMPILER_APPICON_NAME},QMarks.icns,g" -e "s,@EXECUTABLE@,QMarks,g" -e "s,@LIBRARY@,QMarks,g" -e "s,\$${EXECUTABLE_NAME},QMarks,g" -e "s,@TYPEINFO@,????,g" -e "s,\$${QMAKE_PKGINFO_TYPEINFO},????,g" ../../Qt/5.11.2/clang_64/mkspecs/macx-clang/Info.plist.app >QMarks.app/Contents/Info.plist
 QMarks.app/Contents/Resources/QMarks.icns: QMarks.icns
 	@test -d QMarks.app/Contents/Resources/ || mkdir -p QMarks.app/Contents/Resources/
 	@$(DEL_FILE) QMarks.app/Contents/Resources/QMarks.icns
@@ -673,6 +676,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r QMarks.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 

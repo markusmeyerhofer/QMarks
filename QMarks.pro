@@ -6,6 +6,11 @@
 
 QT       += core gui
 
+
+#QMAKE_RPATHDIR += /Users/max/Qt/5.11.2/clang_64/lib
+#QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
+
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = QMarks
