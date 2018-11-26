@@ -8,6 +8,7 @@ QMarks.app
 *.lo
 *.o
 *.obj
+moc_*
 
 # Precompiled Headers
 *.gch
