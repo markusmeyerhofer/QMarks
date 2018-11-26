@@ -25,3 +25,7 @@ Click "Undo" to undo the latest step. Notice you can undo multiple steps ('til n
 Enjoy, 
 
 M.
+
+
+Acknowledgement: App icon kindly provided courtesy openclipart.org / davidblyons
+https://openclipart.org/detail/279671/calculator
