@@ -14,7 +14,7 @@ Windows: download the provided .zip file (https://github.com/markusmeyerhofer/QM
 
 The project should compile just fine under Windows as well as Linux. Clone the repo, open the provided .pro file in Qt Creator, configure, build and you should be ready to go.
 
-Notice you might need to acknowledge your Mac's security warning in order be be able to execute the app.
+Notice you might need to acknowledge your Mac's security warning in order to be able to execute the app.
 
 This project is licensed under the terms of the GNU Public License v2. Feel free to clone and contribute. 
 

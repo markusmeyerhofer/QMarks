@@ -39,4 +39,5 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-ICON = QMarks.icns
+macx:ICON = QMarks.icns
+win32: RC_ICONS += qmarks.ico
