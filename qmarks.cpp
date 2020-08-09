@@ -51,10 +51,12 @@ void QMarks::compute()
         {
             ui->averageLineEdit->setText("⨏ " + QString::number(0));
         }
+        ui->averageLineEdit->repaint();
 
         i++;
     }
     ui->sumLineEdit->setText("∑ " + QString::number(sum));
+    ui->sumLineEdit->repaint();
 }
 
 void QMarks::on_clearButton_clicked()
@@ -63,6 +65,8 @@ void QMarks::on_clearButton_clicked()
     this->compute();
     ui->operandsLineEdit->setText(QString::number(0));
     ui->averageLineEdit->setText("⨏ " + QString::number(0));
+    ui->averageLineEdit->repaint();
+    ui->operandsLineEdit->repaint();
 }
 
 void QMarks::on_undoButton_clicked()
