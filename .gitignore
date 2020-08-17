@@ -45,6 +45,8 @@ release
 
 Makefile*
 
+._*
+
 *~
 *.autosave
 *.a
